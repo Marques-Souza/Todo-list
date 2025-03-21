@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.filter-btn:hover {
+    background-color: #45a049;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin: 5px 0;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li.task {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li.task.completed {
+    background-color: #e0e0e0;
+    text-decoration: line-through;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.actions a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.actions .btn-edit {
+    background-color: #007BFF;
+    color: white;
+}
+
+.actions .btn-edit:hover {
+    background-color: #0056b3;
+}
+
+.actions .btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.actions .btn-delete:hover {
+    background-color: #c82333;
+}
+
+.actions .btn-complete {
+    background-color: #28a745;
+    color: white;
+}
+
+.actions .btn-complete:hover {
+    background-color: #218838;
+}
+
+
+
+
+/* Aqui está a versão mobile do media query para 768px */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .filter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .actions a {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .actions .btn-edit,
+    .actions .btn-delete,
+    .actions .btn-complete {
+        width: 100%;
+    }
+}
+
+/* Aqui está a versão mobile do media query para 480px */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .filter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .actions a {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .actions .btn-edit,
+    .actions .btn-delete,
+    .actions .btn-complete {
+        width: 100%;
+    }
+}
